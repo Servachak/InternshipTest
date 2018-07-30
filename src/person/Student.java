@@ -27,4 +27,12 @@ public class Student {
     public Knowledge getKnowledge() {
         return knowledge;
     }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", knowledge=" + knowledge +
+                '}';
+    }
 }

@@ -15,4 +15,11 @@ public class Knowledge {
     public void setLevel(int level) {
         this.level = level;
     }
+
+    @Override
+    public String toString() {
+        return "Knowledge{" +
+                "level=" + level +
+                '}';
+    }
 }
