@@ -27,13 +27,14 @@ public class Application {
 
         Internship internship = new Internship("Interlink");
 
+        /* check whether the level of student knowledge is higher then average level of the university*/
         for (Student universityStudent : university.getAllUniversityStudents()) {
            if (universityStudent.getKnowledge().getLevel() >
                     university.getAVGKnowledgeStudentsByUniversity(university.getAllUniversityStudents())) {
                internship.setStudents(universityStudent);
            }
         }
-
+        /*show students that have knowledge level higher then average level of the university*/
         for (Student student : internship.getStudents()) {
             System.out.println(student.getName() + " range:" +
                     student.getKnowledge().getLevel());

@@ -13,7 +13,7 @@ public class University implements UniversityImplementation {
     double avgLevelUniversity;
     private List<Student> allUniversityStudents;
 
-
+    /*in the constructor initialisation list students that  study at the university*/
     public University(String name) {
        this.universityName = name;
        this.allUniversityStudents = new ArrayList<>();
@@ -39,6 +39,7 @@ public class University implements UniversityImplementation {
         return universityName;
     }
 
+    /*find out average level of the students knowledge */
     @Override
     public double getAVGKnowledgeStudentsByUniversity(List<Student> students) {
 

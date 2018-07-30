@@ -7,6 +7,7 @@ public class Student {
     private String name;
     private Knowledge knowledge;
 
+
     public Student(String name,Knowledge knowledge) {
         this.name = name;
         this.knowledge = knowledge;

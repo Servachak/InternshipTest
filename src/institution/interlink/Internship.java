@@ -11,6 +11,7 @@ public class Internship {
     private String name;
     private List<Student> internshipStudents;
 
+
     public Internship(String name) {
        this.name = name;
        this.internshipStudents = new ArrayList<>();
