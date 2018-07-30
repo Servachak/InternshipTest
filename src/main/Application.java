@@ -33,6 +33,7 @@ public class Application {
                internship.setStudents(universityStudent);
            }
         }
+
         System.out.println("List of internship's students:");
 
         /*show students that have knowledge level higher then average level of the university*/
