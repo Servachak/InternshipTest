@@ -17,12 +17,11 @@ public class Application {
 
         University university = new University("CH.U.I.");
 
-
-
         university.addStudent(new Student("Andrew Kostenko",new Knowledge(5)));
         university.addStudent(new Student("Julia Veselkina",new Knowledge(4)));
         university.addStudent(new Student("Maria Perechrest",new Knowledge(1)));
 
+        /*show average level*/
         System.out.printf("%f\n",university.getAVGKnowledgeStudentsByUniversity(university.getAllUniversityStudents()));
 
         Internship internship = new Internship("Interlink");
@@ -34,14 +33,13 @@ public class Application {
                internship.setStudents(universityStudent);
            }
         }
-        /*show students that have knowledge level higher then average level of the university*/
-        for (Student student : internship.getStudents()) {
-            System.out.println(student.getName() + " range:" +
-                    student.getKnowledge().getLevel());
-        }
-
         System.out.println("List of internship's students:");
 
+        /*show students that have knowledge level higher then average level of the university*/
+        for (Student student : internship.getStudents()) {
+            System.out.println(student.getName() + " has level:" +
+                    student.getKnowledge().getLevel());
+        }
         System.out.println(internship.getStudents());
     }
 }
