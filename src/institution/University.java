@@ -49,7 +49,6 @@ public class University implements UniversityImplementation {
             sumOfRatings += student.getKnowledge().getLevel();
             numberOfRatings++;
         }
-
         return avgLevelUniversity =(double) sumOfRatings / numberOfRatings;
     }
 }
